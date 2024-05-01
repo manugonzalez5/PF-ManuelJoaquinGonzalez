@@ -42,7 +42,7 @@
         background-color: $pfk-color;
 }
     .navbar-nav {
-        @media (max-width:768px){
+        @media (max-width:767px){
             background-color: $pfk-color;
             display: flex;
             flex-direction: column;

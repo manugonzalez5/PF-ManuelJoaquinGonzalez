@@ -54,7 +54,7 @@
 .navbar .offcanvas-body {
   background-color: #04336b;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar .navbar-nav {
     background-color: #04336b;
     display: flex;
