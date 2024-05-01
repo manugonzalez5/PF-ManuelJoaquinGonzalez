@@ -51,8 +51,8 @@ img {
 
 @media (max-width:767px) {
     .hero {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         .hero-left {
             width: 100%;
             right: 0;
@@ -61,6 +61,8 @@ img {
 
         }
         .hero-right {
+            display: grid;
+            grid-template-columns: 1fr;
             width: 100%;
             height: 300px;
             transition: .5s;
@@ -68,6 +70,8 @@ img {
             z-index: 1;
 
         }
+
+
         }
     } 
 
@@ -75,6 +79,3 @@ img {
 
 
 
-    h1, h2, h3 {
-        text-decoration: underline;
-    } 
