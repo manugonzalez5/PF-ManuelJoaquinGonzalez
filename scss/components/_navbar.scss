@@ -1,0 +1,53 @@
+.navbar {
+    @include flex (row, space-between, center, 10px);
+    padding: 20px;
+
+    background-color: $pfk-color;
+
+    img {
+        width: 100px;
+
+    }
+    ul {
+        list-style-type: none;
+        @include flex (row, center, center, 10px);
+        background-color: $pfk-color;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: $light-color;
+        transition: .5s;
+        background-color: $pfk-color;
+    }
+
+    .nav-btn {
+        background-color: $pfk-color;
+        color: $light-color;
+        padding: 10px;
+        border-radius: 10px;
+        transition: .5s;
+        &:hover {
+            background-color: $light-color;
+            color: $main-color;
+        }
+    }
+
+    .offcanvas-header {
+        background-color: $pfk-color;
+        
+    }
+
+    .offcanvas-body {
+        background-color: $pfk-color;
+}
+    .navbar-nav {
+        @media (max-width:768px){
+            background-color: $pfk-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+

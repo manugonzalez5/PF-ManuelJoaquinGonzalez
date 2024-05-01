@@ -1,0 +1,40 @@
+.footer {
+padding: 20px;
+
+background-color: #04336b;
+}
+
+.btn-footer {
+color: white;
+background: linear-gradient( $main-color, $dark-color);
+padding: 1rem;
+background-position: 0% 100%;
+background-repeat: no-repeat;
+background-size: 100% 0%;
+transition: background-size 0.5s, border-color 0.7s, transform 0.5s;
+border-radius: 10px;
+border: 1px solid transparent;
+
+&:hover {
+    transition: .5s;
+    background-size: 100% 100%;
+    border-color: white;
+    cursor: pointer;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: $light-color;
+    transition: .1s;
+
+    &:hover {
+        color: $main-color;
+        transform: scale(1.01);
+        text-decoration: underline;
+    }
+
+}
+
+
+}
