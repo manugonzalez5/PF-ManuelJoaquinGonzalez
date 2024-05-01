@@ -154,22 +154,27 @@ img {
   object-fit: cover;
   transition: 0.5s;
 }
+
 @media (max-width: 767px) {
-  .hero .hero-right {
+  .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 400px;
   }
-  .hero .hero-right img {
+  .hero .hero-left {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    right: 0;
+    padding: 20px;
+    z-index: 1;
+  }
+  .hero .hero-right {
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1;
   }
 }
-.hero h1, .hero h2, .hero h3 {
+h1, h2, h3 {
   text-decoration: underline;
 }
 

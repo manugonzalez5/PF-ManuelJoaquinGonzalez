@@ -45,25 +45,36 @@ img {
             @include img (100%, 100%, cover);
             transition: .5s;
         }
-
-        @media (max-width:767px) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 400px;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                
-            }  
-        }
-
     }
+
+}
+
+@media (max-width:767px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        .hero-left {
+            width: 100%;
+            right: 0;
+            padding: 20px;
+            z-index: 1;
+
+        }
+        .hero-right {
+            width: 100%;
+            height: 300px;
+            transition: .5s;
+            overflow: hidden;
+            z-index: 1;
+
+        }
+        }
+    } 
+
+
+
+
 
     h1, h2, h3 {
         text-decoration: underline;
-    }
-}
+    } 
