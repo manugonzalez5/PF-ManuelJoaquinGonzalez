@@ -320,6 +320,7 @@ body {
   background-color: #191919;
   color: #eee;
   font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 
 .formulario {
@@ -327,7 +328,7 @@ body {
   text-align: start;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 90%;
   color: #ffffff;
   padding: 20px;
   border-radius: 5px;
@@ -335,6 +336,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 400px;
 }
 
 textarea {
@@ -354,7 +356,7 @@ label {
 input [type=text], textarea {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border: 2px solid white;
   border-radius: 5px;
   font-size: 16px;
@@ -364,13 +366,13 @@ input [type=text], textarea {
 .boton {
   display: flex;
   flex-direction: row;
-  width: 250px;
+  width: 100%;
   align-items: center;
   background-color: #eee;
   color: #191919;
   padding: 10px;
   border-radius: 10px;
-  margin: 3px;
+  margin: 0px;
   cursor: pointer;
   transition: background-color 0.5s;
 }
@@ -378,6 +380,12 @@ input [type=text], textarea {
   background-color: #191919;
   color: #eee;
   border: 2px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .boton {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
