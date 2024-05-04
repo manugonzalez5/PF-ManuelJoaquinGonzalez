@@ -6,7 +6,7 @@ background-color: #04336b;
 
 .btn-footer {
 color: white;
-background: linear-gradient( $main-color, $dark-color);
+background: linear-gradient($main-color, $dark-color);
 padding: 1rem;
 background-position: 0% 100%;
 background-repeat: no-repeat;
@@ -16,25 +16,21 @@ border-radius: 10px;
 border: 1px solid transparent;
 
 &:hover {
-    transition: .5s;
+    transition: 0.5s;
     background-size: 100% 100%;
     border-color: white;
     cursor: pointer;
-
 }
 
 .nav-link {
     text-decoration: none;
     color: $light-color;
-    transition: .1s;
+    transition: 0.1s;
 
     &:hover {
-        color: $main-color;
-        transform: scale(1.01);
-        text-decoration: underline;
+    color: $main-color;
+    transform: scale(1.01);
+    text-decoration: underline;
     }
-
 }
-
-
 }
